@@ -4,11 +4,11 @@ SocialGrep Reddit Dataset
 Pushshift Reddit Dataset
 两个数据集来源不同、规模不同、结构不同、score 计算方式可能不同，因此不可直接混合分析。
 二、SocialGrep Reddit Dataset
-数据来源：
+数据来源
 https://huggingface.co/datasets/SocialGrep/the-reddit-dataset-dataset
-原始规模：
+原始规模
 约 75.1M rows（posts + comments）
-处理方式：
+处理方式
 全量 streaming 遍历
 应用清洗规则
 最终保留 63,079 rows
@@ -108,7 +108,7 @@ selftext	string 或 null	正文
 title	string 或 null	标题
 url	string 或 null	外部链接
 domain	string 或 null	域名
-缺失字段统一填充为 NaN。比如post没有body，标为 NaN。
+缺失字段统一填充为 NaN。比如 post 没有 body，标为 NaN。
 2.5 子版块说明
 什么是子版块（Subreddit）？
 Reddit 是一个由多个主题社区组成的平台，每个社区称为一个“子版块”（subreddit），通常以：
@@ -128,16 +128,16 @@ r/datasets
 无跨 subreddit 数据
 不适合做社区间对比分析
 三、Pushshift Reddit Dataset
-数据来源：
+数据来源
 https://huggingface.co/datasets/fddemarco/pushshift-reddit
-原始规模：
+原始规模
 约 550M rows
 该数据集本身只包含 post（不包含 comment）。
-处理方式：
+处理方式
 Streaming 采样
 抽样保留 200,000 rows，如需更多数据可联系我。
 selftext ≥ 20 字符
-输出文件：
+输出文件
 data/processed/pushshift-reddit_post.parquet
 3.1 文件结构
 行数：200,000
@@ -186,7 +186,6 @@ Research-about-AI-vs-Human-engagement/
 │   └── the-reddit-dataset-dataset_fetch_split.py
 │
 └── 中文版DATA_DOCUMENTATION.md
-
 脚本说明
 pushshift-reddit_fetch_split.py
 用于处理：
