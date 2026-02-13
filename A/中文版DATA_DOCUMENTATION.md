@@ -17,7 +17,7 @@ https://huggingface.co/datasets/SocialGrep/the-reddit-dataset-dataset
 
 ## 原始规模
 
-约 75.1M rows（posts + comments）
+约 75.1k rows（posts + comments）
 
 ## 处理方式
 
